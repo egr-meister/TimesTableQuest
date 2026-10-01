@@ -22,19 +22,21 @@ jobs:
       BUILD_TOOLS: "36.0.0"
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up JDK 17 (Temurin)
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: "17"
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-
+      # The ubuntu runner ships the Android SDK (ANDROID_HOME) with cmdline-tools/latest.
+      # android-actions/setup-android@v3 fails on current runners (it tries to install the removed 'tools' package).
       - name: Install SDK Platform 36 and build-tools
-        run: sdkmanager --install "platforms;android-36" "build-tools;${BUILD_TOOLS}" "platform-tools"
+        run: |
+          SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          yes | "$SDKMANAGER" --licenses > /dev/null || true
+          "$SDKMANAGER" --install "platforms;android-36" "build-tools;${BUILD_TOOLS}" "platform-tools"
 
       - name: Set up Gradle (uses the committed wrapper)
         uses: gradle/actions/setup-gradle@v4
