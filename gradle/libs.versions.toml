@@ -1,0 +1,60 @@
+[versions]
+agp = "8.13.0"
+kotlin = "2.2.20"
+ksp = "2.2.20-2.0.3"
+coreKtx = "1.17.0"
+activity = "1.11.0"
+lifecycle = "2.9.4"
+composeBom = "2025.09.01"
+navigation = "2.9.5"
+room = "2.8.1"
+datastore = "1.1.7"
+splashscreen = "1.0.1"
+coroutines = "1.10.2"
+junit = "4.13.2"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "splashscreen" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity" }
+androidx-lifecycle-common = { group = "androidx.lifecycle", name = "lifecycle-common", version.ref = "lifecycle" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel-savedstate = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-savedstate", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime" }
+androidx-compose-runtime-saveable = { group = "androidx.compose.runtime", name = "runtime-saveable" }
+androidx-compose-ui-geometry = { group = "androidx.compose.ui", name = "ui-geometry" }
+androidx-compose-animation-core = { group = "androidx.compose.animation", name = "animation-core" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-text = { group = "androidx.compose.ui", name = "ui-text" }
+androidx-compose-ui-unit = { group = "androidx.compose.ui", name = "ui-unit" }
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+androidx-compose-foundation-layout = { group = "androidx.compose.foundation", name = "foundation-layout" }
+androidx-compose-animation = { group = "androidx.compose.animation", name = "animation" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-material-icons-core = { group = "androidx.compose.material", name = "material-icons-core" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
+androidx-navigation-common = { group = "androidx.navigation", name = "navigation-common", version.ref = "navigation" }
+androidx-navigation-runtime = { group = "androidx.navigation", name = "navigation-runtime", version.ref = "navigation" }
+androidx-room-common = { group = "androidx.room", name = "room-common", version.ref = "room" }
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+androidx-datastore-core = { group = "androidx.datastore", name = "datastore-core", version.ref = "datastore" }
+androidx-datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
+androidx-datastore-preferences-core = { group = "androidx.datastore", name = "datastore-preferences-core", version.ref = "datastore" }
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+room = { id = "androidx.room", version.ref = "room" }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="paper">#FFFBF5E9</color>
+    <color name="navy">#FF1B2A4A</color>
+    <color name="teal">#FF3E8A8C</color>
+    <color name="tile_blue">#FFDCE8F2</color>
+    <color name="highlight_yellow">#FFF5C84C</color>
+    <color name="grid_line">#FFB9CDDC</color>
+</resources>

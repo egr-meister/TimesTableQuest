@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.TimesTableQuest" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/paper</item>
+    </style>
+
+    <!-- Launch screen: same paper background and grid icon; dismissed on the first frame (no artificial delay). -->
+    <style name="Theme.TimesTableQuest.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/paper</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_grid</item>
+        <item name="postSplashScreenTheme">@style/Theme.TimesTableQuest</item>
+    </style>
+</resources>
